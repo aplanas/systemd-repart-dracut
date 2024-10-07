@@ -27,7 +27,7 @@ BuildRequires:  git-core
 %endif
 
 Name:           systemd-repart-dracut
-Version:        1.0%{git_version}
+Version:        1+git20241007.a97aa3c%{git_version}
 Release:        0
 Summary:        systemd-repart service dracut module
 License:        MIT
@@ -53,7 +53,7 @@ for i in systemd-repart-dracut{,.service} module-setup.sh; do
   cp "$i" %buildroot/usr/lib/dracut/modules.d/94systemd-repart-dracut/"$i"
 done
 mkdir -p %buildroot/usr/bin
-ln -s ../lib/dracut/modules.d/95disk-encryption-tool/systemd-repart-dracut %buildroot/usr/bin
+ln -s ../lib/dracut/modules.d/94systemd-repart-dracut/systemd-repart-dracut %buildroot/usr/bin
 
 %files
 %license LICENSE
