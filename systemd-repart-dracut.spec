@@ -29,7 +29,7 @@ BuildRequires:  git-core
 Name:           systemd-repart-dracut
 Version:        1+git20241007.a97aa3c%{git_version}
 Release:        0
-Summary:        systemd-repart service dracut module
+Summary:        Systemd-repart service dracut module
 License:        MIT
 URL:            https://github.com/schubi2/systemd-repart-dracut
 Source:         systemd-repart-dracut-%{version}.tar
