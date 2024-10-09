@@ -8,7 +8,6 @@ After=combustion.service
 After=ignition-complete.target
 
 Before=disk-encryption-tool-dracut.service
-Before=systemd-repart.service
 
 Conflicts=initrd-switch-root.target umount.target
 Conflicts=dracut-emergency.service emergency.service emergency.target
